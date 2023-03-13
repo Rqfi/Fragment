@@ -19,8 +19,8 @@ class MainActivity : AppCompatActivity() {
         viewPager = findViewById(R.id.view_pager)
         tabLayout.addTab(tabLayout.newTab().setText("Halo"))
         tabLayout.addTab(tabLayout.newTab().setText("Bang"))
-
         tabLayout.tabGravity = TabLayout.GRAVITY_FILL
+
         val adapter = MyAdapter(this, supportFragmentManager,
             tabLayout.tabCount)
         viewPager.adapter = adapter
